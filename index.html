@@ -1,0 +1,1234 @@
+<!doctype html>
+<html lang="en">
+
+        <head>
+            
+            <script type="text/javascript">
+                function fuera(){
+                    document.getElementById("pop").style.display="none";
+                }
+            </script>
+
+
+
+          <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="1949769a-40d0-4256-ae25-6a6da7d9d96b" data-blockingmode="auto" type="text/javascript"></script>
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>PROTOTIPO DE PAGINA WEB</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
+            
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/vegas.min.css" rel="stylesheet">
+
+        <link href="css/tooplate-barista.css" rel="stylesheet">
+
+
+
+<!--    parallax-->
+      <!--====== Title ======-->
+    <title>Unfold - Personal Portfolio & CV Template</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+ 
+
+
+
+
+ 
+
+<style type="text/css">
+
+
+
+
+h1::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 5rem;
+}
+
+/*html {
+  block-size: 100%;
+  inline-size: 100%;
+}*/
+
+/*body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}*/
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+
+.fondo2{
+    background-image: url(images/retro.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+}
+   
+
+
+    .fondo{
+        background-image: url(images/mariobros.jpg);
+        height: 100%;
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+
+    .header-shape.shape-fore{
+
+top: 270px !important;
+  right: 21.6% !important;
+  left: auto !important;
+
+}
+ .header-shape.shape-seven{
+    
+    left: 400px !important;
+  bottom: -41px !important;
+  top: 30px !important;
+}
+.header-shape.shape-nine{
+    top: 270px !important;
+  right: 21.6% !important;
+  left: auto !important;
+}
+
+
+ .header-shape.shape-one{
+    top: 44px !important;
+  left: 0 !important;
+
+}
+ .header-shape.shape-ten{
+
+    right: 232px !important;
+  bottom: 5px !important;
+  left: auto !important;
+  top: auto !important;
+}
+ .header-shape.shape-six{
+    top: 377px !important;
+  left: 50% !important;
+  scale: 0.8!important;
+}
+ .header-shape.shape-three{
+
+    top: 5 !important;
+  left: 43% !important;
+}
+ 
+ .header-shape.shape-five{
+    top: 190px !important;
+  right: 3.6% !important;
+  left: auto !important;
+ }
+ 
+.header-shape.shape-eleven {
+  top: -36px !important;
+  right: 39.6% !important;
+  left: auto !important;
+  scale: 0.8 !important;
+ }
+
+
+.container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+    
+    padding: 50px;
+}
+
+
+.pacman {
+    position: relative;
+    
+    z-index: 99;
+
+    &::before,
+    &::after {
+        position: absolute;
+        top: -35px;
+        display: block;
+        border-radius: 30%;
+        content: "";
+        height: 0px;
+        width: 0px;
+    }
+
+    &::before {
+        animation: chunk-top .5s ease infinite;
+        border: 35px solid #FFCC00;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    &::after {
+        animation: chunk-bottom .5s ease infinite;
+        border: 35px solid #FFCC00;
+        border-right-color: transparent;
+        border-top-color: transparent;
+    }
+}
+
+
+.path {
+    display: flex;
+    justify-content: space-around;
+    animation: eating-path .5s linear infinite;
+    width: 100%;
+
+    &::before {
+        background: black;
+        border-radius: 50%;
+        content: "";
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+
+@keyframes chunk-top {
+    0%,
+    100% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(-80deg);
+    }
+}
+
+@keyframes chunk-bottom {
+    0%,
+    100% {
+        transform: rotate(-40deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes eating-path {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.lds-spinner,
+.lds-spinner div,
+.lds-spinner div:after {
+  box-sizing: border-box;
+}
+.lds-spinner {
+  color: currentColor;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3.2px;
+  left: 36.8px;
+  width: 6.4px;
+  height: 17.6px;
+  border-radius: 20%;
+  background: currentColor;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.centrado{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    background-color: black;
+
+}
+
+.hidden{
+
+    overflow: hidden;
+}
+
+.banner{
+    display: block;
+    position: absolute;
+    top: 88px;
+    left: 0px;
+    z-index: 999!important;
+    animation-name: banner;
+    animation-duration: 4s;
+}
+
+
+@keyframes banner{
+    to{top: 0px;}
+    from{top: 800px;}
+}
+
+</style>
+
+    </head>
+
+<body class="hidden">
+
+     <div class="banner" id="pop">
+        <img src="logoqr.png" type="button" onclick="fuera()"></div>
+
+
+        <div class="centrado" id="carga">
+       <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+</div>
+
+
+
+  
+            <main>
+                <nav class="navbar navbar-expand-lg">                
+                    <div class="container" style="background-color: blue;">
+                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                            <img src="images/v1.png" class="navbar-brand-image img-fluid" alt="Barista Cafe Template"></a>
+                            <div class="row text-center">
+    <div class="col-sm-12">
+        
+         
+        <button class="btn btn-primary" type="button" onclick='document.getElementById("game").src="images/game1.png"'>INTERACTUA</button>
+         
+
+        <button class="btn btn-danger" type="button" onclick='document.getElementById("game").src="images/game2.png"'>INTERACTUA</button>
+        <img src="images/game1.png" id="game">
+        
+    </div>
+</div>
+
+
+                      
+        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-lg-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_1">Home</a>
+                                </li>
+
+        
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_2">Sobre nosotros</a>
+                                </li>
+                                
+
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_3">Nuestro menú</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_4">Reseñas</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_5">Contacto</a>
+                                </li>
+
+                               
+                            </ul>
+
+                            <div class="ms-lg-3">
+                                <a class="btn custom-btn custom-border-btn" href="reservation.html">
+                                    Reserva aquí
+                                    <i class="bi-arrow-up-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+<main class="container">
+  <div class="pacman"></div>
+  <div class="path"></div>
+  <div class="path"></div>
+  <div class="path"></div>
+  <div class="path"></div>
+  <div class="path"></div>
+  <div class="path"></div>
+  <div class="path"></div>
+  
+</main>
+
+
+                <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+                    <div class="container">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6 col-12 mx-auto">
+                                <em class="small-text">Bienvenido a gamehouse.co</em>
+                                
+                                <h1>GAME HOUSE</h1>
+
+                                <p class="text-white mb-4 pb-lg-2">
+                                    Tu <em>lugar gamer</em> delicioso.
+                                </p>
+
+                                <a class="btn custom-btn custom-border-btn smoothscroll me-3" href="#section_2">
+                                    ¿Quienes somos?
+                                </a>
+
+                                <a class="btn custom-btn smoothscroll me-2 mb-2" href="#section_3"><strong> Menu</strong></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="hero-slides" class="fondo2" style="background-image: url(images/juegos.jpg);"></div>
+                </section>
+
+
+                <section class="about-section section-padding" id="section_2">
+                    <div class="section-overlay"></div>
+                    <div class="container">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6 col-12">
+                                <div class="ratio ratio-1x1">
+                                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                                        <source src="videos/retro.mp4" type="video/mp4">
+
+                                        Your browser does not support the video tag.
+                                    </video>
+
+                                    <div class="about-video-info d-flex flex-column">
+                                        <h4 class="mt-auto">Una aventura que empezamos en 2022.</h4>
+
+                                        <h4></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
+                                <em class="text-white">gamehouse.co</em>
+
+                                <h2 class="text-white mb-3">GAME HOUSE</h2>
+
+                                <p class="text-white">Un grupo de amigos apasionados por los videojuegos decidimos trasladar nuestra pasión por los videojuegos a la cocina.</p>
+
+                                <p class="text-white">Fue una idea conjunta que al principio era muy loca pero al final se hizo realidad. <a rel="nofollow" href="https://www.tooplate.com" target="_blank">Tooplate</a>.</p>
+
+                                <a href="#barista-team" class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4">Nuestras figuras en el stand.</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+                 <!-- ======= Portfolio Section ======= -->
+                 <section id="portfolio"  class="portfolio">
+
+                 
+    
+    </section><!-- End Portfolio Section -->
+
+    
+
+                <section class="barista-section section-padding section-bg" id="barista-team">
+                    <div class="container">
+                        <div class="row justify-content-center">
+
+                            <div class="col-lg-12 col-12 text-center mb-4 pb-lg-2">
+                                <em class="text-white">FIGURAS A TAMAÑO REAL EN NUESTRO RESTAURANTE</em>
+
+                                <h2 class="text-white">VEN A VERLAS!</h2>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                                <div class="team-block-wrap">
+                                    <div class="team-block-info d-flex flex-column">
+                                        <div class="d-flex mt-auto mb-3">
+                                            <h4 class="text-white mb-0"></h4>
+
+                                            <p class="badge ms-4"><em></em></p>
+                                        </div>
+
+                                        <p class="text-white mb-0"></p>
+                                    </div>
+
+                                    <div class="team-block-image-wrap">
+                                        <img src="images/team/figura1.jpg" class="team-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                                <div class="team-block-wrap">
+                                    <div class="team-block-info d-flex flex-column">
+                                        <div class="d-flex mt-auto mb-3">
+                                            <h4 class="text-white mb-0"></h4>
+
+                                            <p class="badge ms-4"><em></em></p>
+                                        </div>
+
+                                        <p class="text-white mb-0"></p>
+                                    </div>
+
+                                    <div class="team-block-image-wrap">
+                                        <img src="images/team/figura2.jpg" class="team-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                                <div class="team-block-wrap">
+                                    <div class="team-block-info d-flex flex-column">
+                                        <div class="d-flex mt-auto mb-3">
+                                            <h4 class="text-white mb-0"></h4>
+
+                                            <p class="badge ms-4"><em></em></p>
+                                        </div>
+
+                                        <p class="text-white mb-0"></p>
+                                    </div>
+
+                                    <div class="team-block-image-wrap">
+                                        <img src="images/team/figura3.jpg" class="team-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="team-block-wrap">
+                                    <div class="team-block-info d-flex flex-column">
+                                        <div class="d-flex mt-auto mb-3">
+                                            <h4 class="text-white mb-0"></h4>
+
+                                            <p class="badge ms-4"><em></em></p>
+                                        </div>
+
+                                        <p class="text-white mb-0"></p>
+                                    </div>
+
+                                    <div class="team-block-image-wrap">
+                                        <img src="images/team/figura4.jpg" class="team-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+<header id="home" class="header-area">
+
+
+        <div id="parallax" class="fondo" class="header-content d-flex align-items-center">
+            <div class="header-shape shape-one layer" data-depth="0.10">
+                <img src="assets/images/banner/shape/paralax1.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-tow layer" data-depth="0.30">
+                <img src="assets/images/banner/shape/supermario.png" alt="Shape">
+            </div> 
+            <!--<div class="header-shape shape-three layer" data-depth="0.40">
+                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div>  header shape -->
+            <!--<div class="header-shape shape-fore layer" data-depth="0.60">
+                <img src="assets/images/banner/shape/paralax2.png" alt="Shape">
+            </div>  header shape -->
+            <div class="header-shape shape-five layer" data-depth="0.20">
+                <img src="assets/images/banner/shape/paralax6.png" alt="Shape">
+            </div>
+            <div class="header-shape shape-six layer" data-depth="0.15">
+                <img src="assets/images/banner/shape/paralax3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-seven layer" data-depth="0.50">
+                <img src="assets/images/banner/shape/paralax4.png" alt="Shape">
+            </div> <!-- header shape -->
+            <!--<div class="header-shape shape-eight layer" data-depth="0.40">
+                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div>  header shape -->
+            <div class="header-shape shape-nine layer" data-depth="0.20">
+                <img src="assets/images/banner/shape/paralax5.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-eleven layer" data-depth="0.50">
+                <img src="assets/images/banner/shape/lakitu.png" alt="Shape">
+            </div>
+            <!--<div class="header-shape shape-ten layer" data-depth="0.30">
+                <img src="assets/images/banner/shape/paralax6.png" alt="Shape">
+            </div> header shape -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="header-content-right">
+                            <h4 style="color: green; text-align: center;" class="sub-title">SUPER MARIO BROS</h4>
+                            <h1 style="color: red;" class="title">EL VIDEOJUEGO QUE MARCÓ UNA ÉPOCA</h1>
+                            <p></p>
+                            <a class="main-btn" href="#work"></a>
+                        </div> <!-- header content right -->
+                    </div>
+                    <div class="col-lg-6 offset-xl-1">
+                        <!--<div class="header-image d-none d-lg-block">
+                            
+                        </div>  header image -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="header-social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header-social-icon">
+                                <ul>
+                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni-twitter-original"></i></a></li>
+                                    <li><a href="#"><i class="lni-behance-original"></i></a></li>
+                                    <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                                </ul>
+                            </div> <!-- header social -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- header social -->
+        </div>
+
+
+</header>
+
+
+                <section class="menu-section section-padding" id="section_3">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                                <div class="menu-block-wrap">
+                                    <div class="text-center mb-4 pb-lg-2">
+                                        <em class="text-white">CARTA DE DÍA</em><img src="images/gk.gif">
+                                        <h4 class="text-white">Desayunos/Brunch</h4>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            <h6>Gofre PACMAN</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$6,95</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small> 2 Gofres en forma de Pacman acompañadas de moras.</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex">
+                                            <h6>
+                                                Tortitas Pokémon
+                                            </h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="text-white ms-auto"><del>$10,95</del></strong>
+
+                                            <strong class="ms-2">$8,95</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>4 tortitas con nata y sirope de arce al gusto y decoración de Pokémon.</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            <h6>Dorayakis
+                                                <span class="badge ms-3">Recommend</span>
+                                            </h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$2/u</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Ricos Dorayakis con sabor a elegir (judía dulce o chocolate).</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex">
+                                            <h6>Cafés</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$1,60 (el precio varia depende del café que elija)</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Café solo,con leche,cortado,mocca...</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            <h6>Zumo de frutas</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$2,20</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Sabor a elegir:Naranja,Melocotón,Tropical,uva...</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="menu-block-wrap">
+                                    <div class="text-center mb-4 pb-lg-2">
+                                        <em class="text-white">Carta de mediodía y noche</em>
+                                        <h4 class="text-white">Comidas y cenas</h4>
+                                        <h4 class="text-white">(bebida y patatas incluida con nuestras hamburguesas)</h4>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            
+                                            <h6>Hamburguesa de Mario Bros</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="text-white ms-auto"><del>$15.50</del></strong>
+
+                                            <strong class="ms-2">$12.50</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Hamburguesa con champiñones,bacon, queso, salsa chedarr y lechuga.</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex">
+                                            <h6>
+                                                Hamburguesa de Dragon Ball
+                                                <span class="badge ms-3">Recommend</span>
+                                            </h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$10,90</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Hamburguesa de Dragon Ball de pollo,lechuga, cebolla y  salsa barbacoa.</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            <h6>Pizza Pokémon</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$9,95</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Rich Milk and Foam</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex">
+                                            <h6>Bolas de Dragón</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$3,95/u</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Las míticas boles de drac más dulces que nunca.Sabor maracuyá.</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            <h6>Tarta Donkey Kong</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$19,95</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Tarta hecha de kit kat de chocolate negro, chuches de platáno y chocolate con leche.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="reviews-section section-padding section-bg" id="section_4">
+                    <div class="container">
+                        <div class="row justify-content-center" class="fondo2">
+
+                            <div class="col-lg-12 col-12 text-center mb-4 pb-lg-2">
+                                <em class="text-white">Comentarios de los clientes</em>
+
+                                <h2 class="text-white">Reseñas</h2>
+                            </div>
+
+                            <div class="timeline">
+                                <div class="timeline-container timeline-container-left">
+                                    <div class="timeline-content">
+                                        <div class="reviews-block">
+                                            <div class="reviews-block-image-wrap d-flex align-items-center">
+                                                <img src="images/reviews/young-woman-with-round-glasses-yellow-sweater.jpg" class="reviews-block-image img-fluid" alt="">
+
+                                                <div class="">
+                                                    <h6 class="text-white mb-0">Sandra</h6>
+                                                    <em class="text-white">Cliente</em>
+                                                </div>
+                                            </div>
+
+                                            <div class="reviews-block-info">
+                                                <p>Tienen unas hamburguesas deliciosas y además un ambiente genial en el restaurante.</p>
+
+                                                <div class="d-flex border-top pt-3 mt-4">
+                                                    <strong class="text-white">4.5 <small class="ms-2">Rating</small></strong>
+
+                                                    <div class="reviews-group ms-auto">
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-container timeline-container-right">
+                                    <div class="timeline-content">
+                                        <div class="reviews-block">
+                                            <div class="reviews-block-image-wrap d-flex align-items-center">
+                                                <img src="images/reviews/senior-man-white-sweater-eyeglasses.jpg" class="reviews-block-image img-fluid" alt="">
+
+                                                <div class="">
+                                                    <h6 class="text-white mb-0">Carlos</h6>
+                                                    <em class="text-white"> Cliente</em>
+                                                </div>
+                                            </div>
+
+                                            <div class="reviews-block-info">
+                                                <p>Decidí celebrar aquí el cumpleaños de mi hijo y le encantó,la ambientación de videojuegos y la comida muy buena.
+                                                Sitio muy recomendable.</p>
+
+                                                <div class="d-flex border-top pt-3 mt-4">
+                                                    <strong class="text-white">4.7 <small class="ms-2">Rating</small></strong>
+
+                                                    <div class="reviews-group ms-auto">
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-container timeline-container-left">
+                                    <div class="timeline-content">
+                                        <div class="reviews-block">
+                                            <div class="reviews-block-image-wrap d-flex align-items-center">
+                                                <img src="images/reviews/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg" class="reviews-block-image img-fluid" alt="">
+
+                                                <div class="">
+                                                    <h6 class="text-white mb-0">Olivia</h6>
+                                                    <em class="text-white"> Cliente</em>
+                                                </div>
+                                            </div>
+
+                                            <div class="reviews-block-info">
+                                                <p>Los desayunos son muy variados y muy ricos. Luego también me quedé flipando con las figuras a tamaño real que tienen en el restaurante.</p>
+
+                                                <div class="d-flex border-top pt-3 mt-4">
+                                                    <strong class="text-white">4.5 <small class="ms-2">Rating</small></strong>
+
+                                                    <div class="reviews-group ms-auto">
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="contact-section section-padding" id="section_5">
+                    <div class="container" class="fondo2">
+                        <div class="row">   
+
+                            <div class="col-lg-12 col-12">
+                                <em class="text-white">¿Alguna consulta?</em>
+                                <h2 class="text-white mb-4 pb-lg-2">Contacte con nosotros</h2>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <form action="#" method="post" class="custom-form contact-form" role="form">
+
+                                <div class="row">
+                                    
+                                    <div class="col-lg-6 col-12">
+                                        <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
+                                    </div>
+
+                                    <div class="col-lg-6 col-12">
+                                        <label for="email" class="form-label">Correo Electrónico</label>
+
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jack@gmail.com" required="">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">¿En qué podemos ayudarle?</label>
+
+                                        <textarea name="message" rows="4" class="form-control" id="message" placeholder="Mensaje" required=""></textarea>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 col-12 mx-auto mt-3">
+                                    <button type="submit" class="form-control">Enviar</button>
+                                </div>
+                            </form>
+                            </div>
+
+                            <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
+                                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5039.668141741662!2d72.81814769288509!3d19.043340656729775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c994f34a7355%3A0x2680d63a6f7e33c2!2sLover%20Point!5e1!3m2!1sen!2sth!4v1692722771770!5m2!1sen!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-12 me-auto">
+                                <em class="text-white d-block mb-4">¿Dónde nos puedes encontrar?</em>
+
+                                <strong class="text-white">
+                                    <i class="bi-geo-alt me-2"></i>
+                                    Tarragona,Rambla Nova al lado de la Font del Centenari
+                                </strong>
+
+                                <ul class="social-icon mt-4">
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link bi-facebook">
+                                        </a>
+                                    </li>
+        
+                                    <li class="social-icon-item">
+                                        <a href="https://x.com/minthu" target="_new" class="social-icon-link bi-twitter">
+                                        </a>
+                                    </li>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link bi-whatsapp">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+                                <em class="text-white d-block mb-4">Contacto</em>
+
+                                <p class="d-flex mb-1">
+                                    <strong class="me-2">Telefono:</strong>
+                                    <a href="tel: 305-240-9671" class="site-footer-link">
+                                        (65) 
+                                        305 2409 671
+                                    </a>
+                                </p>
+
+                                <p class="d-flex">
+                                    <strong class="me-2">Email:</strong>
+
+                                    <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                                        gamehouse@gmail.com
+                                    </a>
+                                </p>
+                            </div>
+
+
+                            <div class="col-lg-5 col-12">
+                                <em class="text-white d-block mb-4">Horarios(festivos cerrado).</em>
+
+                                <ul class="opening-hours-list">
+                                    <li class="d-flex">
+                                        Lunes - Viernes
+                                        <span class="underline"></span>
+
+                                        <strong>9:00 - 15:30</strong>
+                                        <strong>17:00 - 23:00</strong>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        Sábado
+                                        <span class="underline"></span>
+
+                                        <strong>9:00 - 16:00/</strong><strong>17:00- 00:00</strong>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        Domingo 
+                                        <span class="underline"></span>
+
+                                        <strong>Cerrado</strong>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-8 col-12 mt-4">
+                                <p class="copyright-text mb-0">Copyright © GAME HOUSE 2048 
+                                    - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+                            </div>
+                    </div>
+                </footer>
+            <!--</main>-->
+
+<!--PRECARGA-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="codigo.js"></script>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/vegas.min.js"></script>
+        <script src="js/custom.js"></script>
+
+
+
+ <!-- PARALLAX JS Files -->
+      <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Parallax js ======-->
+    <script src="assets/js/parallax.min.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== Appear js ======-->
+    <script src="assets/js/jquery.appear.min.js"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!--====== Validator js ======-->
+    <script src="assets/js/validator.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+
+    </body>
+</html>
